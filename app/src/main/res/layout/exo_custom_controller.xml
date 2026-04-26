@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/exo_player_control_view" />
+
+    <ImageView
+        android:id="@+id/exo_fullscreen"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end"
+        android:padding="6dp"
+        android:src="@drawable/ic_fullscreen"
+        android:layout_margin="8dp" />
+
+
+</LinearLayout>

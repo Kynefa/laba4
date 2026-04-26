@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <Button
+        android:id="@+id/btnSelectVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обрати відео"
+        android:background="#22FFFFFF"
+        android:textColor="#FFFFFF" />
+
+    <FrameLayout
+        android:id="@+id/playerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1AFFFFFF" />
+
+        <ImageView
+            android:id="@+id/btnFullscreen"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end|top"
+            android:layout_margin="12dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_fullscreen"
+            android:tint="#FFFFFF" />
+
+    </FrameLayout>
+
+
+
+    <EditText
+        android:id="@+id/etUrlVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL відео"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:background="#22FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnPlayUrlVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Відтворити з Інтернету"
+        android:layout_marginTop="8dp"
+        android:background="#22FFFFFF"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
